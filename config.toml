@@ -2,7 +2,7 @@
 baseurl = "arneman.me"
 languageCode = "en-US"
 title = "Mark Arneman"
-theme = "hugo-theme-cactus-plus"
+theme = "arneman"
 # googleAnalytics = "your_google_analytics_id"
 # Set the value to true if your site include CJK (Chinese, Japanese, and Korean languages) characters
 hasCJKLanguage = false
@@ -15,17 +15,15 @@ bio = "Critical Situation Manager at <a href='https://commvault.com/' target='_b
 twitter = "bearlikelion"
 facebook = "bearlikelion"
 
-enableRSS = true
-enableToc = true
+enableRSS = false
+enableToc = false
 
 enableDisqus = false
-# disqusShortname = "your_disqus_short_name"
-
+disqusShortname = "arneman-me"
 
 enableSummary = true
 # Set the value to true if use description in post front matter replace content summary
 useDescriptionReplaceSummary = false
-
 
 enableGoogleAnalytics = true
 enableBaiduAnalytics = false
@@ -45,16 +43,17 @@ customJS  = []
 
 # Navigation links
 home = ""
-about = ""
+about = "About Me"
 archive = ""
-subscribe = ""
+projects = ""
+subscribe = "RSS"
 
 olderPosts = ""
 newerPosts = ""
 copyright = ""
 
 # show latest posts in single page
-showLatestPosts = false
+showLatestPosts = true
 readMore = ""
 
 # Share
