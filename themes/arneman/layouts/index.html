@@ -4,6 +4,10 @@
     {{ partial "profile.html" . }}
 
     <section id="wrapper" class="home">
+        {{ .Content }}
+
+        <h1>Latest Posts</h1>
+        <hr>
         {{ partial "post-list.html"  . }}
         {{ partial "pagination.html" . }}
         {{ partial "footer.html"     . }}

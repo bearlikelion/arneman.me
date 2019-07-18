@@ -10,7 +10,7 @@ hasCJKLanguage = false
 [params]
 author = "Mark Arneman"
 description = "Mark Arneman's personal webpage"
-bio = "Critical Situation Manager at <a href='https://commvault.com/' target='_blank'>Commvault</a>"
+bio = "[mark@arneman.me](mailto:mark@arneman.me)"
 
 twitter = "bearlikelion"
 facebook = "bearlikelion"
@@ -73,6 +73,11 @@ socialIconStyle = ""
 
 # Add additional social link entries underneath
 [social]
-	facebook-square = "https://www.facebook.com/bearlikelion"
-	twitter-square = "https://www.twitter.com/bearlikelion"
-	github-square = "https://www.github.com/bearlikelion"
+	facebook-square = "https://facebook.com/bearlikelion"
+	github-square = "https://github.com/bearlikelion"
+	linkedin-square = "https://linkedin.com/in/markarneman"
+	twitter-square = "https://twitter.com/bearlikelion"
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true

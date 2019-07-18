@@ -8,5 +8,7 @@ hidden: false
 
 ### Hi, I'm Mark
 
-I work for Commvault as a Critical Situation Manager, meaning I get to solve the critical customer facing issues we run into.
-<br> I run a variety of [self-hosted services](https://status.arneman.me) whose
+I work for Commvault as a Critical Situation Manager, meaning I get to solve the critical customer facing issues we run into.\
+I run a variety of [self-hosted services](https://status.arneman.me)
+
+---
