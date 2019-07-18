@@ -12,5 +12,5 @@ I have been wanting to redo my personal portfolio website for a while, so I fina
 I played around with a few static site generators but ultimately landed on the Go powered [Hugo](https://gohugo.io/).
 I wanted something easy to develop in as well as create content.
 
-Thank you for stopping by,
+Thank you for stopping by,\
 -Mark
