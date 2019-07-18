@@ -169,8 +169,6 @@ h2 {
 
 nav.main-nav {
     padding: 20px 20px 0;
-    background: #fff;
-    background: rgba(255, 255, 255, .90);
     margin: 0 auto;
     text-align: right;
     z-index: 100;
@@ -894,7 +892,7 @@ a.symbol:hover {
 }
 #TableOfContents a code{
   font-family: 'Fantasque Sans Mono',;
-  background-color: #fff;
+  background-color: #f2f1ef;
   font-size: 11px;
   padding: 2px 3px;
   font-weight: 100;
@@ -948,6 +946,10 @@ nav.main-nav {
 
 body, h1, h2, h3, h4, h5, h6, #post-list a, #post-list .dates, #toc, a {
     font-family: 'Fantasque Sans Mono';
+}
+
+body {
+    background-color: #f2f1ef;
 }
 
 #footer, #footer p {
