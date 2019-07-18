@@ -139,7 +139,6 @@ h2 {
 }
 
 .profile #header {
-    margin-bottom: 60px;
     text-align: center;
     position: relative;
 }
@@ -535,8 +534,6 @@ Post List
 
 /* Post Page */
 
-#header {
-}
 #wrapper.post {
     max-width: 670px;
 }
@@ -741,9 +738,6 @@ h2.month {
 @media screen and (max-width: 540px) {
     #wrapper {
         padding: 20px 20px 20px 20px;
-    }
-    #header {
-        margin-bottom: 60px;
     }
     .post {
         margin: 40px 0;
