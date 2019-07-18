@@ -1,12 +1,12 @@
 ---
 title: "Cube3"
 date: 2019-04-11T11:00:49-04:00
-description: Cube3 (Cube^Cubed) is a game created for the 8 Bits to Infinity's Two Button Jam
+description: Cube3 is a game created for the 8 Bits to Infinity's Two Button Jam
 ---
 
-# Cube3
-
 ![Cube3 Screenshot](/images/cube3.png)
+
+# Cube3
 
 **Play in your browser or download it [here](https://bearlikelion.itch.io/cube3)!**
 

@@ -22,6 +22,7 @@ enableDisqus = false
 disqusShortname = "arneman-me"
 
 enableSummary = true
+summaryLength = 10
 # Set the value to true if use description in post front matter replace content summary
 useDescriptionReplaceSummary = false
 
