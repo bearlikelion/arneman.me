@@ -1,7 +1,7 @@
 ---
 title: "bova.club"
 date: 2018-07-16
-tags: [bova, club, prank, site, source, code]
+tags: [bova, prank, web site, source code]
 description: Bova Club was a prank website I designed for my friend Dave Bova
 hidden: true
 ---

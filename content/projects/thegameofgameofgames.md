@@ -2,6 +2,7 @@
 title: "The Game of Game of Games"
 date: 2019-02-15T11:10:44-04:00
 description: A game created by myself for the TV Game Jam
+tags: [game, gamejam, source code]
 ---
 
 ![The Game of Game of Games Logo](/images/thegameofgameofgames.png)

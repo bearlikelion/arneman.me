@@ -133,7 +133,7 @@ h2 {
 }
 
 .profile #wrapper {
-    padding: 60px 40px 0px;
+    padding: 40px;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -526,14 +526,14 @@ Post List
 }
 
 #footer {
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 
 /* Post Page */
 
 #wrapper.post {
-    max-width: 670px;
+    max-width: 980px;
 }
 .post {
     margin: auto;
@@ -836,19 +836,19 @@ a.symbol:hover {
     color: #999;
 }
 
-.fa.fa-facebook-square:hover {
+.fab.fa-facebook-square:hover {
     color: #3b5998;
 }
 
-.fa.fa-github-square:hover {
+.fab.fa-github-square:hover {
     color: #211f1f;
 }
 
-.fa.fa-linkedin-square:hover {
+.fab.fa-linkedin:hover {
     color: #0077B5;
 }
 
-.fa.fa-twitter-square:hover {
+.fab.fa-twitter-square:hover {
     color: #38A1F3;
 }
 
@@ -952,6 +952,6 @@ body {
     background-color: #f2f1ef;
 }
 
-#footer, #footer p {
+#footer p {
     margin: 0;
 }
