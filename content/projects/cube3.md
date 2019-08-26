@@ -2,7 +2,7 @@
 title: "Cube3"
 date: 2019-04-11T11:00:49-04:00
 description: Cube3 is a game created for the 8 Bits to Infinity's Two Button Jam
-tags: [game, gamejam, source code]
+tags: [game, game jam, source code, project]
 ---
 
 ![Cube3 Screenshot](/images/cube3.png)

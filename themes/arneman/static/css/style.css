@@ -64,7 +64,6 @@ table {
     font-family: "icons";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     text-decoration: inherit;
     text-align: center;
@@ -116,7 +115,7 @@ html, body {
 }
 
 body {
-    font-family: 'Fantasque Sans Mono';
+    font-family: 'Roboto', sans-serif;
     color: #666;
 }
 
@@ -128,7 +127,6 @@ h1 {
 }
 
 h2 {
-    font-family: 'Fantasque Sans Mono';
     color: #bbb;
 }
 
@@ -220,7 +218,7 @@ nav.main-nav a.cta {
 }
 
 #wrapper.home {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -265,7 +263,6 @@ ul {
 
 li {
     list-style-position: outside;
-    /* text-indent: -1.5em; */
     margin-left: 1.5em;
 }
 
@@ -304,7 +301,6 @@ em, i {
 
 .description {
     float: right;
-    font-family: 'Fantasque Sans Mono';
     color: #aaa;
 }
 
@@ -316,7 +312,6 @@ em, i {
 }
 
 .home h2 {
-    font-family: 'Fantasque Sans Mono';
     color: #bbb;
 }
 
@@ -334,7 +329,6 @@ em, i {
 .post h2 {
     margin-top: 20px;
     margin-bottom: 10px;
-    font-family: 'Fantasque Sans Mono';
     color: #111;
 }
 
@@ -358,8 +352,8 @@ em, i {
 }
 
 #post-list h2 {
-    font-family: 'Fantasque Sans Mono';
     color: #aaa;
+    font-family: 'Roboto', sans-serif;
     margin-top: 2px;
 }
 
@@ -474,6 +468,7 @@ Post List
 =========================================== */
 #post-list li, #archive-list li {
     list-style-type: none;
+    margin-right: 1.5em;
 }
 
 #post-list li:last-child {
@@ -494,7 +489,6 @@ Post List
     float: right;
     position: relative;
     top: 1px;
-    font-family: 'Fantasque Sans Mono';
     color: #bbb;
 }
 
@@ -525,10 +519,10 @@ Post List
     font-size: 17px;
 }
 
-#footer {
+.footer {
     margin-top: 40px;
+    font-family: 'Fantasque Sans Mono';
 }
-
 
 /* Post Page */
 
@@ -636,7 +630,9 @@ Post List
 }
 
 
-/* Archive */
+/*
+ * Archive
+ */
 
 h1.archive {
     margin-bottom: 0px;
@@ -731,7 +727,9 @@ h2.month {
 }
 
 
-/* Media Queries */
+/*
+ * Media Queries
+ */
 
 @media screen and (max-width: 540px) {
     #wrapper {
@@ -740,7 +738,7 @@ h2.month {
     .post {
         margin: 40px 0;
     }
-    #footer {
+    .footer {
         margin-top: 60px;
     }
     #post-list, #archive-list {
@@ -819,7 +817,9 @@ h2.month {
 }
 
 
-/* CUSTOM ADDITIONS */
+/*
+ * Social Links
+ */
 
 #social {
     text-align: center;
@@ -852,8 +852,8 @@ a.symbol:hover {
     color: #38A1F3;
 }
 
-/**
- * Table of content
+/*
+ * Table of contents
  */
 #toc {
   line-height: 1em;
@@ -899,8 +899,8 @@ a.symbol:hover {
 }
 
 
-/**
- * tags page
+/*
+ * Tags page
  */
 
 #wrapper.tags {
@@ -912,7 +912,7 @@ a.symbol:hover {
 }
 .page-tags ul li {
     margin: 10px 15px;
-    display: inline-block;
+    display: block;
     font-size: 1.2em;
 }
 .page-tags ul li a {
@@ -926,7 +926,9 @@ a.symbol:hover {
     color: #5694f1;
 }
 
-/* CSS Overrides */
+/*
+ * CSS Overrides
+ */
 nav.main-nav {
     text-align: center;
 }
@@ -944,7 +946,7 @@ nav.main-nav {
     font-style: normal;
   }
 
-body, h1, h2, h3, h4, h5, h6, #post-list a, #post-list .dates, #toc, a {
+.profile, h1 {
     font-family: 'Fantasque Sans Mono';
 }
 
@@ -952,6 +954,6 @@ body {
     background-color: #f2f1ef;
 }
 
-#footer p {
+.footer p {
     margin: 0;
 }

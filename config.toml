@@ -3,7 +3,7 @@ baseurl = "/"
 languageCode = "en-US"
 title = "Mark Arneman"
 theme = "arneman"
-# googleAnalytics = "your_google_analytics_id"
+
 # Set the value to true if your site include CJK (Chinese, Japanese, and Korean languages) characters
 hasCJKLanguage = false
 
@@ -16,7 +16,7 @@ twitter = "bearlikelion"
 facebook = "bearlikelion"
 
 enableRSS = true
-enableToc = true
+enableToc = false
 
 enableDisqus = true
 disqusShortname = "arneman-me"
@@ -27,9 +27,10 @@ summaryLength = 10
 useDescriptionReplaceSummary = false
 
 enableGoogleAnalytics = true
+googleAnalytics = "UA-48666725-1"
 
-enableTwitterCard = false
 # The url for twitter card image, default is avatar.png in static/images directory
+enableTwitterCard = false
 twitterCardImage = ""
 
 # Add custom assets with their paths relative to the static folder
@@ -65,11 +66,11 @@ subtitle404 = ""
 
 # Add additional social link entries underneath
 [social]
-	facebook-square = "https://facebook.com/bearlikelion"
-	github-square = "https://github.com/bearlikelion"
-	linkedin = "https://linkedin.com/in/markarneman"
-	twitter-square = "https://twitter.com/bearlikelion"
+facebook-square = "https://facebook.com/bearlikelion"
+github-square = "https://github.com/bearlikelion"
+linkedin = "https://linkedin.com/in/markarneman"
+twitter-square = "https://twitter.com/bearlikelion"
 
 [blackfriday]
-  plainIDAnchors = true
-  hrefTargetBlank = true
+plainIDAnchors = true
+hrefTargetBlank = true
