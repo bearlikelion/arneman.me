@@ -190,8 +190,6 @@ nav.main-nav a.cta {
 @media (max-width: 700px) {
   nav.main-nav {
       padding: 20px 10px 0 0;
-      background: #fff;
-      background: rgba(255, 255, 255, .90);
       margin: 0 auto;
       text-align: right;
       z-index: 100;
