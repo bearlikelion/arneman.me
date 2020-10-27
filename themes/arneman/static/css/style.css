@@ -131,7 +131,7 @@ h2 {
 }
 
 .profile #wrapper {
-    padding: 40px;
+    padding: 20px;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -307,6 +307,7 @@ em, i {
     letter-spacing: -1px;
     color: #222;
     font-weight: bold;
+    text-align: center;
 }
 
 .home h2 {
@@ -397,7 +398,7 @@ hr {
     display: block;
     border: none;
     height: 1px;
-    margin: 40px auto;
+    margin: 20px auto;
     background: #ccc;
 }
 
@@ -517,7 +518,6 @@ Post List
 }
 
 .footer {
-    margin-top: 40px;
     font-family: 'Fantasque Sans Mono';
 }
 
@@ -953,4 +953,9 @@ body {
 
 .footer p {
     margin: 0;
+}
+
+.about {
+    text-align: center;
+    font-family: 'Fantasque Sans Mono';;
 }
