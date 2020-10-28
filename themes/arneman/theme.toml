@@ -11,7 +11,7 @@ min_version = 0.20
   name = "bearlikelion"
   homepage = "https://github.com/bearlikelion"
 
-[[original]]
+[original]
   name = "Cactus Plus"
   homepage = "https://github.com/nodejh/hugo-theme-cactus-plus"
   repo = "https://github.com/nodejh/hugo-theme-cactus-plus"
