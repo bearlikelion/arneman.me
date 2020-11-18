@@ -26,6 +26,16 @@
 			<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
 		{{ end }}
 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', '{{ .Site.Params.googleAnalytics }}');
+		</script>
+
 		<script type="text/javascript">
 			var _paq = window._paq || [];
 			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
