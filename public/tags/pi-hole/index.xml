@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pi-Hole on Mark Arneman</title>
+    <link>/tags/pi-hole/</link>
+    <description>Recent content in Pi-Hole on Mark Arneman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 28 Nov 2018 10:42:25 -0400</lastBuildDate>
+    <atom:link href="/tags/pi-hole/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resolving Local DNS in Pi-Hole</title>
+      <link>/posts/local-pi-hole/</link>
+      <pubDate>Wed, 28 Nov 2018 10:42:25 -0400</pubDate>
+      <guid>/posts/local-pi-hole/</guid>
+      <description>I love Pi-hole, it’s a network based ad blocker that reports all DNS Queries.&#xA;But, I’ve been having an issue resolving host names on my local domain through the Pi-hole.&#xA;I run an Active Directory/DNS server with all my entries, Pi-hole is the first DNS Provider on my network, and I can resolve the host names on Pi-hole fine. But when I resolve them through the Pi-hole I get no response.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Mark Arneman</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Mark Arneman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plex</title>
+      <link>/tags/plex/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/plex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project</title>
+      <link>/tags/project/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/project/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>/tags/python/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Source Code</title>
+      <link>/tags/source-code/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/source-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tatulli</title>
+      <link>/tags/tatulli/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/tatulli/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>/tags/docker/</link>
+      <pubDate>Thu, 18 Jul 2019 17:49:49 -0400</pubDate>
+      <guid>/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Game</title>
+      <link>/tags/game/</link>
+      <pubDate>Thu, 11 Apr 2019 11:00:49 -0400</pubDate>
+      <guid>/tags/game/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Game Jam</title>
+      <link>/tags/game-jam/</link>
+      <pubDate>Thu, 11 Apr 2019 11:00:49 -0400</pubDate>
+      <guid>/tags/game-jam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dns</title>
+      <link>/tags/dns/</link>
+      <pubDate>Wed, 28 Nov 2018 10:42:25 -0400</pubDate>
+      <guid>/tags/dns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pi-Hole</title>
+      <link>/tags/pi-hole/</link>
+      <pubDate>Wed, 28 Nov 2018 10:42:25 -0400</pubDate>
+      <guid>/tags/pi-hole/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hyperv</title>
+      <link>/tags/hyperv/</link>
+      <pubDate>Fri, 12 Jan 2018 10:46:21 -0400</pubDate>
+      <guid>/tags/hyperv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Remote Management</title>
+      <link>/tags/remote-management/</link>
+      <pubDate>Fri, 12 Jan 2018 10:46:21 -0400</pubDate>
+      <guid>/tags/remote-management/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
