@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Source Code on Mark Arneman</title>
-    <link>/tags/source-code/</link>
+    <link>//localhost:1313/tags/source-code/</link>
     <description>Recent content in Source Code on Mark Arneman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/source-code/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/source-code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Popular Plex</title>
-      <link>/projects/popular-plex/</link>
+      <link>//localhost:1313/projects/popular-plex/</link>
       <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/projects/popular-plex/</guid>
+      <guid>//localhost:1313/projects/popular-plex/</guid>
       <description>This script is designed to run weekly, generating collections in Plex of most popular Movies and Television based on the data from the Tautulli API. It uses the python-plexapi package and requests. The idea behind this project was to recreate Netflix&amp;rsquo;s &amp;lsquo;What&amp;rsquo;s Popular&amp;rsquo; list View the source code on GitHub </description>
     </item>
     <item>
       <title>My Docker Compose Files</title>
-      <link>/posts/docker-compose/</link>
+      <link>//localhost:1313/posts/docker-compose/</link>
       <pubDate>Thu, 18 Jul 2019 17:49:49 -0400</pubDate>
-      <guid>/posts/docker-compose/</guid>
+      <guid>//localhost:1313/posts/docker-compose/</guid>
       <description>I created a public GitHub repo to be informational and used as a reference for others when creating and managing multiple docker-compose files with Traefik acting as a reverse proxy.&#xA;I run my containers on an Alpine Linux virtual machine.&#xA;Check it out over on GitHub: https://github.com/bearlikelion/docker-compose&#xA;Containers Container Description Additional BitWarden_rs Password manager Hub Matomo Website Analytics Hub Media Automated media server - Deluge Jackett Radarr Sonarr ReadMe Netdata Performance monitoring Hub Nextcloud A safe home for all your data Hub OpenVPN OpenVPN Server Work in progress Organizr HTPC/Homelab services organizer Hub Pi-hole Network based ad blocker Hub - Website Relay Tor Relay Server Hub Teamspeak Teamspeak 3 Server Hub Traefik Traefik reverse proxy Hub - Docs Warrior Archive Team warrior Hub Watchtower Container auto-updates Hub </description>
     </item>
     <item>
       <title>Cube3</title>
-      <link>/projects/cube3/</link>
+      <link>//localhost:1313/projects/cube3/</link>
       <pubDate>Thu, 11 Apr 2019 11:00:49 -0400</pubDate>
-      <guid>/projects/cube3/</guid>
+      <guid>//localhost:1313/projects/cube3/</guid>
       <description>Cube3 Play in your browser or download it here!&#xA;View the high scores online!&#xA;About Cube3 (Cube Cubed) is a game created for 8 Bits to Infinity&amp;rsquo;s Two Button Jam.&#xA;The player controls a cube left and right across a grid to avoid oncoming obstacles.&#xA;How to play The player controls the cube using:&#xA;L1/LB and R1/RB on a game pad Left and Right mouse buttons Left and Right arrow keys A and D on the keyboard Obstacles that pass the player that are on the player&amp;rsquo;s current side are counted as a point.</description>
     </item>
     <item>
       <title>The Game of Game of Games</title>
-      <link>/projects/thegameofgameofgames/</link>
+      <link>//localhost:1313/projects/thegameofgameofgames/</link>
       <pubDate>Fri, 15 Feb 2019 11:10:44 -0400</pubDate>
-      <guid>/projects/thegameofgameofgames/</guid>
+      <guid>//localhost:1313/projects/thegameofgameofgames/</guid>
       <description>The Game of Game of Games A game created by Mark Arneman for the #TVGameJam.&#xA;Play in your browser or download it here!&#xA;View the highscores online!&#xA;About The Game of Game of Games is my entry into the #TVGameJam. This was a solo development effort as well as my first released game! It was inspired by the television show, Ellen&amp;rsquo;s Game of Games.&#xA;The project source is available on GitHub​</description>
     </item>
   </channel>

@@ -10,7 +10,7 @@ hasCJKLanguage = false
 [params]
 author = "Mark Arneman"
 description = "Mark Arneman's personal webpage"
-bio = "[mark@arneman.me](mailto:mark@arneman.me)"
+bio = "I make stuff and break things"
 
 twitter = "bearlikelion"
 facebook = "bearlikelion"

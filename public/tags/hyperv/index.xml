@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hyperv on Mark Arneman</title>
-    <link>/tags/hyperv/</link>
+    <link>//localhost:1313/tags/hyperv/</link>
     <description>Recent content in Hyperv on Mark Arneman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 12 Jan 2018 10:46:21 -0400</lastBuildDate>
-    <atom:link href="/tags/hyperv/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/hyperv/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Manage Hyper-V Remotely</title>
-      <link>/posts/hyperv-remotely/</link>
+      <link>//localhost:1313/posts/hyperv-remotely/</link>
       <pubDate>Fri, 12 Jan 2018 10:46:21 -0400</pubDate>
-      <guid>/posts/hyperv-remotely/</guid>
+      <guid>//localhost:1313/posts/hyperv-remotely/</guid>
       <description>While it might be convenient to RDP to your Hyper-V host and use the manager on the server directly. I prefer to run the manage multiple hosts all from my local machine. Below are the steps to take to install the Hyper-V management tools, enable credential delegation, and connect to your host from your local machine. Install the Hyper-V Management Tools&#xA;From Add/Remove Programs, select &amp;lsquo;Turn Windows features on or off&amp;rsquo;, then check the Hyper-V Management Tools Once installed, you will have the Hyper-V Manager under &amp;lsquo;Windows Administrator Tools&amp;rsquo; in your Start menu</description>
     </item>
   </channel>
