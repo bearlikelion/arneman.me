@@ -1,7 +1,7 @@
 # Hugo default output directory
 # Generated files by hugo
-/public/
-/resources/_gen/
+# /public/ # Need to commit public build to repo for caprover deployment
+# /resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json
 

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+
+		<meta name="author" content="Mark Arneman">
+		<meta name="description" content="Mark Arneman&#39;s personal webpage">
+
+		<title>Manage Hyper-V Remotely &middot; Mark Arneman</title>
+		<link rel="shortcut icon" href="//localhost:1313/images/favicon.ico">
+		<link rel="stylesheet" href="//localhost:1313/css/style.css">
+		<link rel="stylesheet" href="//localhost:1313/css/styles/atom-one-dark.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+		
+			<link href="//localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="Mark Arneman" />
+		
+
+		
+
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48666725-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-48666725-1');
+		</script>
+	</head>
+
+    <body>
+        <div id="wrapper">
+            <div class="profile">
+    <header id="header">
+        <a href='//localhost:1313/'>
+            <img id="avatar" src="//localhost:1313/images/avatar.jpg"/>
+        </a>
+        <h1>Mark Arneman</h1>
+        
+
+        <nav class="main-nav">
+	
+	
+		<a href='//localhost:1313/'>Home</a>
+	
+	<a href='//localhost:1313/posts'>Posts</a>
+	<a href='//localhost:1313/projects'>Projects</a>
+	
+
+	
+
+	
+</nav>
+
+    </header>
+</div>
+
+
+            <section class="post">
+                <article>
+                    <header>
+                        <h1>
+                            Manage Hyper-V Remotely
+                        </h1>
+                        <h2 class="headline">
+                        Jan 12, 2018
+                        · 284 words
+                        · 2 minute read
+                        <span class="tags">
+                        
+                        
+                            
+                                <a href="//localhost:1313/tags/hyperv">hyperv</a>
+                            
+                                <a href="//localhost:1313/tags/remote-management">remote management</a>
+                            
+                        
+                        
+                        </span>
+                        </h2>
+                    </header>
+                    
+                    <section id="post-body">
+                        <p>While it might be convenient to RDP to your Hyper-V host and use the manager on the server directly. I prefer to run the manage multiple hosts all from my local machine. Below are the steps to take to install the Hyper-V management tools, enable credential delegation, and connect to your host from your local machine.
+Install the Hyper-V Management Tools</p>
+<p>From Add/Remove Programs, select &lsquo;Turn Windows features on or off&rsquo;, then check the Hyper-V Management Tools
+<img src="/images/hyperv/Install-HV-MGMT.png" alt="Install Hyper-V Management Tools"></p>
+<p>Once installed, you will have the Hyper-V Manager under &lsquo;Windows Administrator Tools&rsquo; in your Start menu</p>
+<p>But, when trying to connect to the remote server using our credentials we are prompted to allow delegation, which then fails.
+<img src="/images/hyperv/delegation.png" alt="Enable delegation of user credentials">
+<br>
+<img src="/images/hyperv/CredSSP.png" alt="Delegation could not be enabled"></p>
+<h2 id="enabling-remote-management-and-credential-delegation">Enabling Remote Management and Credential Delegation</h2>
+<p>Open PowerShell as Administrator and enable Windows Remote Management on your machine</p>
+<pre tabindex="0"><code>winrm quickconfig
+</code></pre><p><br>
+<img src="/images/hyperv/WinRM-QC.png" alt="WinRM quickconfig"></p>
+<p><strong>Warning:</strong> This will fail if any network adapter is set to &lsquo;Public’ to change this please refer to the following <a href="https://serverfault.com/questions/639088/how-do-i-make-a-connection-private-on-windows-server-2012-r2/639090#639090">serverfault.com answer</a></p>
+<p>Once WinRM is enabled, you will have to configure Windows Credential Security Support Provider (CredSSP) authentication for this machine from the Hyper-V host</p>
+<pre tabindex="0"><code>Enable-WSManCredSSP -Role “Client” -DelegateComputer “hyper-v.FQDN“
+</code></pre><p><br>
+<img src="/images/hyperv/EnableCredSSP.png" alt="Enable CredSSP"></p>
+<p>Now that Windows Remote Management and the Credential Security Support Provider are configured we can attempt to login but will receive an unauthorized error.
+<br>
+<img src="/images/hyperv/delegation-fail.png" alt="Delegation unauthoirzed"></p>
+<h2 id="enable-ntlm-only-server-authentication-from-the-host">Enable NTLM-only Server Authentication from the host</h2>
+<p>Open <strong>&lsquo;gpedit.msc&rsquo;</strong> and navigate to the following tree:<br>
+<strong>Computer Configuration -&gt; Administrative Templates -&gt; System -&gt; Credential Delegation</strong></p>
+<p>Select &lsquo;Allow delegating fresh credentials with NTLM-only server authentication’</p>
+<p><img src="/images/hyperv/gpedit-msc.png" alt="Credential Delegation GP"></p>
+<p>Enable the policy and add your Hyper-V host as an allowed server.</p>
+<pre tabindex="0"><code>WSMAN/host.fqdn.tld
+</code></pre><p><br>
+<img src="/images/hyperv/enable-delegate.png" alt="Enable Delegation"></p>
+<p><strong>Also:</strong> You can set WSMAN/*.fqdn.tld to allow all servers to provide credentials, but this may be a security risk</p>
+<p>Now use Hyper-V Manager to &lsquo;Connect to Server..&rsquo; and <em>voilà</em>!
+<br>
+<img src="/images/hyperv/hyper-v-manager.png" alt="Hyper-V Remote Manager"></p>
+
+                    </section>
+                </article>
+
+                
+
+                
+                    <ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="//localhost:1313/projects/mpdc/">MPDC - Multiplayer Dungeon Crawler<aside class="dates">Mar 19 2021</aside></a>
+        </li>
+    
+        <li>
+            <a href="//localhost:1313/projects/popular-plex/">Popular Plex<aside class="dates">Oct 27 2020</aside></a>
+        </li>
+    
+        <li>
+            <a href="//localhost:1313/posts/docker-compose/">My Docker Compose Files<aside class="dates">Jul 18 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="//localhost:1313/posts/first-post/">First Post<aside class="dates">Jul 15 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="//localhost:1313/projects/cube3/">Cube3<aside class="dates">Apr 11 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="//localhost:1313/projects/thegameofgameofgames/">The Game of Game of Games<aside class="dates">Feb 15 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="//localhost:1313/posts/local-pi-hole/">Resolving Local DNS in Pi-Hole<aside class="dates">Nov 28 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="//localhost:1313/posts/hyperv-remotely/">Manage Hyper-V Remotely<aside class="dates">Jan 12 2018</aside></a>
+        </li>
+    
+</ul>
+
+                
+
+                
+
+                <footer class="footer">
+    
+        <div id="social">
+	
+    <a class="symbol" href="https://github.com/bearlikelion" target="_blank">
+        <i class="fab fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://linkedin.com/in/markarneman" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    
+    <a class="symbol" href="https://twitter.com/bearlikelion" target="_blank">
+        <i class="fab fa-twitter-square"></i>
+    </a>
+    
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2024 Mark Arneman
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/" target="_blank">Hugo</a>, view the source code on <a href="https://github.com/bearlikelion/arneman.me" target="_blank">GitHub</a>
+    </p>
+</footer>
+
+            </section>
+
+            <script src="//localhost:1313/js/jquery-3.4.1.min.js"></script>
+<script src="//localhost:1313/js/main.js"></script>
+<script src="//localhost:1313/js/highlight.pack.js"></script>
+<script src="https://kit.fontawesome.com/d251d3e9b0.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script async src="https://ackee.prod.arneman.me/tracker.js" data-ackee-server="https://ackee.prod.arneman.me" data-ackee-domain-id="db163ac1-e90d-41b7-a989-3f1bf7b282fe"></script>
+        </div>
+    </body>
+</html>

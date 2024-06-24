@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game on Mark Arneman</title>
+    <link>//localhost:1313/tags/game/</link>
+    <description>Recent content in Game on Mark Arneman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 19 Mar 2021 17:48:06 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MPDC - Multiplayer Dungeon Crawler</title>
+      <link>//localhost:1313/projects/mpdc/</link>
+      <pubDate>Fri, 19 Mar 2021 17:48:06 -0400</pubDate>
+      <guid>//localhost:1313/projects/mpdc/</guid>
+      <description>Download it here!&#xA;About MPDC is a multiplayer prototype. The game runs on a dedicated server so there&amp;rsquo;s no need to setup port forwarding or host.&#xA;Credits Developed by: Mark Arneman&#xA;Art by: Viturowski</description>
+    </item>
+    <item>
+      <title>Cube3</title>
+      <link>//localhost:1313/projects/cube3/</link>
+      <pubDate>Thu, 11 Apr 2019 11:00:49 -0400</pubDate>
+      <guid>//localhost:1313/projects/cube3/</guid>
+      <description>Play in your browser or download it here! View the high scores online here!&#xA;About Cube3 (Cube Cubed) is a game created for 8 Bits to Infinity&amp;rsquo;s Two Button Jam.&#xA;The player controls a cube left and right across a grid to avoid oncoming obstacles.&#xA;Credits Developed by:&#xA;Mark Arneman Rensei Music By: Mister Hippo Lazer84 font by Sunrise Digital&#xA;High scores provided by Dreamlo&#xA;Contains music ©2019 Joshua McLean licensed under Creative Commons Attribution-ShareAlike 4.</description>
+    </item>
+    <item>
+      <title>The Game of Game of Games</title>
+      <link>//localhost:1313/projects/thegameofgameofgames/</link>
+      <pubDate>Fri, 15 Feb 2019 11:10:44 -0400</pubDate>
+      <guid>//localhost:1313/projects/thegameofgameofgames/</guid>
+      <description>The Game of Game of Games A game created by Mark Arneman for the #TVGameJam.&#xA;Play in your browser or download it here!&#xA;View the highscores online!&#xA;About The Game of Game of Games is my entry into the #TVGameJam. This was a solo development effort as well as my first released game! It was inspired by the television show, Ellen&amp;rsquo;s Game of Games.&#xA;The project source is available on GitHub​</description>
+    </item>
+  </channel>
+</rss>

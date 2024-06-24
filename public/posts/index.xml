@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Mark Arneman</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on Mark Arneman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 18 Jul 2019 17:49:49 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Docker Compose Files</title>
+      <link>//localhost:1313/posts/docker-compose/</link>
+      <pubDate>Thu, 18 Jul 2019 17:49:49 -0400</pubDate>
+      <guid>//localhost:1313/posts/docker-compose/</guid>
+      <description>I created a public GitHub repo to be informational and used as a reference for others when creating and managing multiple docker-compose files with Traefik acting as a reverse proxy.&#xA;I run my containers on an Alpine Linux virtual machine.&#xA;Check it out over on GitHub: https://github.com/bearlikelion/docker-compose&#xA;Containers Container Description Additional BitWarden_rs Password manager Hub Matomo Website Analytics Hub Media Automated media server - Deluge Jackett Radarr Sonarr ReadMe Netdata Performance monitoring Hub Nextcloud A safe home for all your data Hub OpenVPN OpenVPN Server Work in progress Organizr HTPC/Homelab services organizer Hub Pi-hole Network based ad blocker Hub - Website Relay Tor Relay Server Hub Teamspeak Teamspeak 3 Server Hub Traefik Traefik reverse proxy Hub - Docs Warrior Archive Team warrior Hub Watchtower Container auto-updates Hub </description>
+    </item>
+    <item>
+      <title>First Post</title>
+      <link>//localhost:1313/posts/first-post/</link>
+      <pubDate>Mon, 15 Jul 2019 14:19:46 -0400</pubDate>
+      <guid>//localhost:1313/posts/first-post/</guid>
+      <description>Hello, I&amp;rsquo;m Mark! I have been wanting to redo my personal portfolio website for a while, so I finally got around to doing so! I played around with a few static site generators but ultimately landed on the Go powered Hugo. I wanted something easy to develop in as well as create content.&#xA;Thank you for stopping by,&#xA;-Mark</description>
+    </item>
+    <item>
+      <title>Resolving Local DNS in Pi-Hole</title>
+      <link>//localhost:1313/posts/local-pi-hole/</link>
+      <pubDate>Wed, 28 Nov 2018 10:42:25 -0400</pubDate>
+      <guid>//localhost:1313/posts/local-pi-hole/</guid>
+      <description>I love Pi-hole, it’s a network based ad blocker that reports all DNS Queries.&#xA;But, I’ve been having an issue resolving host names on my local domain through the Pi-hole.&#xA;I run an Active Directory/DNS server with all my entries, Pi-hole is the first DNS Provider on my network, and I can resolve the host names on Pi-hole fine. But when I resolve them through the Pi-hole I get no response.</description>
+    </item>
+    <item>
+      <title>Manage Hyper-V Remotely</title>
+      <link>//localhost:1313/posts/hyperv-remotely/</link>
+      <pubDate>Fri, 12 Jan 2018 10:46:21 -0400</pubDate>
+      <guid>//localhost:1313/posts/hyperv-remotely/</guid>
+      <description>While it might be convenient to RDP to your Hyper-V host and use the manager on the server directly. I prefer to run the manage multiple hosts all from my local machine. Below are the steps to take to install the Hyper-V management tools, enable credential delegation, and connect to your host from your local machine. Install the Hyper-V Management Tools&#xA;From Add/Remove Programs, select &amp;lsquo;Turn Windows features on or off&amp;rsquo;, then check the Hyper-V Management Tools Once installed, you will have the Hyper-V Manager under &amp;lsquo;Windows Administrator Tools&amp;rsquo; in your Start menu</description>
+    </item>
+  </channel>
+</rss>
