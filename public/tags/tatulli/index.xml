@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tatulli on Mark Arneman</title>
-    <link>/tags/tatulli/</link>
+    <link>//localhost:1313/tags/tatulli/</link>
     <description>Recent content in Tatulli on Mark Arneman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/tatulli/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/tatulli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Popular Plex</title>
-      <link>/projects/popular-plex/</link>
+      <link>//localhost:1313/projects/popular-plex/</link>
       <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/projects/popular-plex/</guid>
+      <guid>//localhost:1313/projects/popular-plex/</guid>
       <description>This script is designed to run weekly, generating collections in Plex of most popular Movies and Television based on the data from the Tautulli API. It uses the python-plexapi package and requests. The idea behind this project was to recreate Netflix&amp;rsquo;s &amp;lsquo;What&amp;rsquo;s Popular&amp;rsquo; list View the source code on GitHub </description>
     </item>
   </channel>

@@ -6,6 +6,6 @@
         <h1>{{ .Site.Title }}</h1>
         {{ with .Site.Params.bio }}<h2>{{ . | markdownify }}</h2>{{ end }}
 
-        <!-- {{ partial "nav.html" . }} -->
+        {{ partial "nav.html" . }}
     </header>
 </div>

@@ -18,7 +18,7 @@ facebook = "bearlikelion"
 enableRSS = true
 enableToc = false
 
-enableDisqus = true
+enableDisqus = false
 disqusShortname = "arneman-me"
 
 enableSummary = true

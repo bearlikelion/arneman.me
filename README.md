@@ -1,5 +1,5 @@
 # arneman.me
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6f38e6b4-6e34-4a47-b0bf-0351d1c9be7c/deploy-status)](https://app.netlify.com/sites/arneman-me/deploys)
+Custom portfolio / business card site for [Mark Arneman](https://arneman.me)
 
-Built using [Hugo](https://gohugo.io/), automated builds hosted by [Netlify](https://app.netlify.com/sites/arneman-me/deploys) theme inspired by [Cactus Plus](https://github.com/nodejh/hugo-theme-cactus-plus)
+Static site powered by [Hugo](https://gohugo.io/), builds and deployment through [CapRover](https://caprover.com/), theme inspired by [Cactus Plus](https://github.com/nodejh/hugo-theme-cactus-plus)
