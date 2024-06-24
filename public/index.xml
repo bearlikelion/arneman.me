@@ -2,66 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arneman.me on Mark Arneman</title>
-    <link>//localhost:1313/</link>
+    <link>/</link>
     <description>Recent content in Arneman.me on Mark Arneman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 19 Mar 2021 17:48:06 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jun 2024 17:57:13 -0400</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SurvivalScape</title>
+      <link>/projects/survivalscape/</link>
+      <pubDate>Sun, 23 Jun 2024 17:57:13 -0400</pubDate>
+      <guid>/projects/survivalscape/</guid>
+      <description>Wishlist it on Steam!&#xA;About SurvivalScape is a fast-paced auto-shooter bullet hell! Select your hero from a diverse roster, each boasting unique abilities and playstyles. Battle relentless waves of enemies, gather crystals to level up, and face off against formidable bosses.&#xA;Can you survive?&#xA;Credits Developed by: Mark Arneman</description>
+    </item>
     <item>
       <title>MPDC - Multiplayer Dungeon Crawler</title>
-      <link>//localhost:1313/projects/mpdc/</link>
+      <link>/projects/mpdc/</link>
       <pubDate>Fri, 19 Mar 2021 17:48:06 -0400</pubDate>
-      <guid>//localhost:1313/projects/mpdc/</guid>
+      <guid>/projects/mpdc/</guid>
       <description>Download it here!&#xA;About MPDC is a multiplayer prototype. The game runs on a dedicated server so there&amp;rsquo;s no need to setup port forwarding or host.&#xA;Credits Developed by: Mark Arneman&#xA;Art by: Viturowski</description>
     </item>
     <item>
       <title>Popular Plex</title>
-      <link>//localhost:1313/projects/popular-plex/</link>
+      <link>/projects/popular-plex/</link>
       <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/popular-plex/</guid>
+      <guid>/projects/popular-plex/</guid>
       <description>This script is designed to run weekly, generating collections in Plex of most popular Movies and Television based on the data from the Tautulli API. It uses the python-plexapi package and requests. The idea behind this project was to recreate Netflix&amp;rsquo;s &amp;lsquo;What&amp;rsquo;s Popular&amp;rsquo; list View the source code on GitHub </description>
     </item>
     <item>
       <title>My Docker Compose Files</title>
-      <link>//localhost:1313/posts/docker-compose/</link>
+      <link>/posts/docker-compose/</link>
       <pubDate>Thu, 18 Jul 2019 17:49:49 -0400</pubDate>
-      <guid>//localhost:1313/posts/docker-compose/</guid>
+      <guid>/posts/docker-compose/</guid>
       <description>I created a public GitHub repo to be informational and used as a reference for others when creating and managing multiple docker-compose files with Traefik acting as a reverse proxy.&#xA;I run my containers on an Alpine Linux virtual machine.&#xA;Check it out over on GitHub: https://github.com/bearlikelion/docker-compose&#xA;Containers Container Description Additional BitWarden_rs Password manager Hub Matomo Website Analytics Hub Media Automated media server - Deluge Jackett Radarr Sonarr ReadMe Netdata Performance monitoring Hub Nextcloud A safe home for all your data Hub OpenVPN OpenVPN Server Work in progress Organizr HTPC/Homelab services organizer Hub Pi-hole Network based ad blocker Hub - Website Relay Tor Relay Server Hub Teamspeak Teamspeak 3 Server Hub Traefik Traefik reverse proxy Hub - Docs Warrior Archive Team warrior Hub Watchtower Container auto-updates Hub </description>
     </item>
     <item>
       <title>First Post</title>
-      <link>//localhost:1313/posts/first-post/</link>
+      <link>/posts/first-post/</link>
       <pubDate>Mon, 15 Jul 2019 14:19:46 -0400</pubDate>
-      <guid>//localhost:1313/posts/first-post/</guid>
+      <guid>/posts/first-post/</guid>
       <description>Hello, I&amp;rsquo;m Mark! I have been wanting to redo my personal portfolio website for a while, so I finally got around to doing so! I played around with a few static site generators but ultimately landed on the Go powered Hugo. I wanted something easy to develop in as well as create content.&#xA;Thank you for stopping by,&#xA;-Mark</description>
     </item>
     <item>
       <title>Cube3</title>
-      <link>//localhost:1313/projects/cube3/</link>
+      <link>/projects/cube3/</link>
       <pubDate>Thu, 11 Apr 2019 11:00:49 -0400</pubDate>
-      <guid>//localhost:1313/projects/cube3/</guid>
+      <guid>/projects/cube3/</guid>
       <description>Play in your browser or download it here! View the high scores online here!&#xA;About Cube3 (Cube Cubed) is a game created for 8 Bits to Infinity&amp;rsquo;s Two Button Jam.&#xA;The player controls a cube left and right across a grid to avoid oncoming obstacles.&#xA;Credits Developed by:&#xA;Mark Arneman Rensei Music By: Mister Hippo Lazer84 font by Sunrise Digital&#xA;High scores provided by Dreamlo&#xA;Contains music ©2019 Joshua McLean licensed under Creative Commons Attribution-ShareAlike 4.</description>
     </item>
     <item>
       <title>The Game of Game of Games</title>
-      <link>//localhost:1313/projects/thegameofgameofgames/</link>
+      <link>/projects/thegameofgameofgames/</link>
       <pubDate>Fri, 15 Feb 2019 11:10:44 -0400</pubDate>
-      <guid>//localhost:1313/projects/thegameofgameofgames/</guid>
+      <guid>/projects/thegameofgameofgames/</guid>
       <description>The Game of Game of Games A game created by Mark Arneman for the #TVGameJam.&#xA;Play in your browser or download it here!&#xA;View the highscores online!&#xA;About The Game of Game of Games is my entry into the #TVGameJam. This was a solo development effort as well as my first released game! It was inspired by the television show, Ellen&amp;rsquo;s Game of Games.&#xA;The project source is available on GitHub​</description>
     </item>
     <item>
       <title>Resolving Local DNS in Pi-Hole</title>
-      <link>//localhost:1313/posts/local-pi-hole/</link>
+      <link>/posts/local-pi-hole/</link>
       <pubDate>Wed, 28 Nov 2018 10:42:25 -0400</pubDate>
-      <guid>//localhost:1313/posts/local-pi-hole/</guid>
+      <guid>/posts/local-pi-hole/</guid>
       <description>I love Pi-hole, it’s a network based ad blocker that reports all DNS Queries.&#xA;But, I’ve been having an issue resolving host names on my local domain through the Pi-hole.&#xA;I run an Active Directory/DNS server with all my entries, Pi-hole is the first DNS Provider on my network, and I can resolve the host names on Pi-hole fine. But when I resolve them through the Pi-hole I get no response.</description>
     </item>
     <item>
       <title>Manage Hyper-V Remotely</title>
-      <link>//localhost:1313/posts/hyperv-remotely/</link>
+      <link>/posts/hyperv-remotely/</link>
       <pubDate>Fri, 12 Jan 2018 10:46:21 -0400</pubDate>
-      <guid>//localhost:1313/posts/hyperv-remotely/</guid>
+      <guid>/posts/hyperv-remotely/</guid>
       <description>While it might be convenient to RDP to your Hyper-V host and use the manager on the server directly. I prefer to run the manage multiple hosts all from my local machine. Below are the steps to take to install the Hyper-V management tools, enable credential delegation, and connect to your host from your local machine. Install the Hyper-V Management Tools&#xA;From Add/Remove Programs, select &amp;lsquo;Turn Windows features on or off&amp;rsquo;, then check the Hyper-V Management Tools Once installed, you will have the Hyper-V Manager under &amp;lsquo;Windows Administrator Tools&amp;rsquo; in your Start menu</description>
     </item>
   </channel>
