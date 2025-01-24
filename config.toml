@@ -71,6 +71,7 @@ github-square = "https://github.com/bearlikelion"
 linkedin = "https://linkedin.com/in/markarneman"
 twitter-square = "https://twitter.com/bearlikelion"
 
+
 [blackfriday]
 plainIDAnchors = true
 hrefTargetBlank = true
