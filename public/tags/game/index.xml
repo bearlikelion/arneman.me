@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Game on Mark Arneman</title>
-    <link>/tags/game/</link>
+    <link>//localhost:1313/tags/game/</link>
     <description>Recent content in Game on Mark Arneman</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 19 Mar 2021 17:48:06 -0400</lastBuildDate>
-    <atom:link href="/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/game/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MPDC - Multiplayer Dungeon Crawler</title>
-      <link>/projects/mpdc/</link>
+      <link>//localhost:1313/projects/mpdc/</link>
       <pubDate>Fri, 19 Mar 2021 17:48:06 -0400</pubDate>
-      <guid>/projects/mpdc/</guid>
-      <description>Download it here!&#xA;About MPDC is a multiplayer prototype. The game runs on a dedicated server so there&amp;rsquo;s no need to setup port forwarding or host.&#xA;Credits Developed by: Mark Arneman&#xA;Art by: Viturowski</description>
+      <guid>//localhost:1313/projects/mpdc/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/mpdc-title.png&#34; alt=&#34;MPDC Screenshot&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Download it &lt;a href=&#34;https://bearlikelion.itch.io/mpdc&#34;&gt;here&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;about&#34;&gt;About&lt;/h1&gt;&#xA;&lt;p&gt;MPDC is a multiplayer prototype. The game runs on a dedicated server so there&amp;rsquo;s no need to setup port forwarding or host.&lt;/p&gt;&#xA;&lt;h1 id=&#34;credits&#34;&gt;Credits&lt;/h1&gt;&#xA;&lt;p&gt;Developed by: &lt;a href=&#34;https://arneman.me&#34;&gt;Mark Arneman&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Art by: &lt;a href=&#34;https://gvituri.itch.io/space-shooter&#34;&gt;Viturowski&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cube3</title>
-      <link>/projects/cube3/</link>
+      <link>//localhost:1313/projects/cube3/</link>
       <pubDate>Thu, 11 Apr 2019 11:00:49 -0400</pubDate>
-      <guid>/projects/cube3/</guid>
-      <description>Play in your browser or download it here! View the high scores online here!&#xA;About Cube3 (Cube Cubed) is a game created for 8 Bits to Infinity&amp;rsquo;s Two Button Jam.&#xA;The player controls a cube left and right across a grid to avoid oncoming obstacles.&#xA;Credits Developed by:&#xA;Mark Arneman Rensei Music By: Mister Hippo Lazer84 font by Sunrise Digital&#xA;High scores provided by Dreamlo&#xA;Contains music ©2019 Joshua McLean licensed under Creative Commons Attribution-ShareAlike 4.</description>
+      <guid>//localhost:1313/projects/cube3/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/cube3.png&#34; alt=&#34;Cube3 Screenshot&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Play in your browser or download it &lt;a href=&#34;https://bearlikelion.itch.io/cube3&#34;&gt;here&lt;/a&gt;!&lt;/strong&gt; &lt;br&gt;&#xA;&lt;strong&gt;View the high scores online &lt;a href=&#34;https://arneman.me/cube3&#34;&gt;here&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;&#xA;&lt;p&gt;Cube3 (Cube Cubed) is a game created for 8 Bits to Infinity&amp;rsquo;s &lt;a href=&#34;https://itch.io/jam/2buttonjam&#34;&gt;Two Button Jam&lt;/a&gt;.&lt;br&gt;&#xA;The player controls a cube left and right across a grid to avoid oncoming obstacles.&lt;/p&gt;&#xA;&lt;h2 id=&#34;credits&#34;&gt;Credits&lt;/h2&gt;&#xA;&lt;p&gt;Developed by:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://arneman.me&#34;&gt;Mark Arneman&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mobile.twitter.com/Rensei_&#34;&gt;Rensei&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Music By: &lt;a href=&#34;https://m.soundcloud.com/creative-hippo&#34;&gt;Mister Hippo&lt;/a&gt; &lt;br&gt;&#xA;Lazer84 font by &lt;a href=&#34;https://sunrise-digital.net/font.html&#34;&gt;Sunrise Digital&lt;/a&gt;&lt;br&gt;&#xA;High scores provided by &lt;a href=&#34;http://dreamlo.com/&#34;&gt;Dreamlo&lt;/a&gt;&lt;br&gt;&#xA;Contains music ©2019 &lt;a href=&#34;mrjoshuamclean.com&#34;&gt;Joshua McLean&lt;/a&gt; licensed under Creative Commons Attribution-ShareAlike 4.0&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Game of Game of Games</title>
-      <link>/projects/thegameofgameofgames/</link>
+      <link>//localhost:1313/projects/thegameofgameofgames/</link>
       <pubDate>Fri, 15 Feb 2019 11:10:44 -0400</pubDate>
-      <guid>/projects/thegameofgameofgames/</guid>
-      <description>The Game of Game of Games A game created by Mark Arneman for the #TVGameJam.&#xA;Play in your browser or download it here!&#xA;View the highscores online!&#xA;About The Game of Game of Games is my entry into the #TVGameJam. This was a solo development effort as well as my first released game! It was inspired by the television show, Ellen&amp;rsquo;s Game of Games.&#xA;The project source is available on GitHub​</description>
+      <guid>//localhost:1313/projects/thegameofgameofgames/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/thegameofgameofgames.png&#34; alt=&#34;The Game of Game of Games Logo&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-game-of-game-of-games&#34;&gt;The Game of Game of Games&lt;/h1&gt;&#xA;&lt;p&gt;A game created by &lt;a href=&#34;https://arneman.me&#34;&gt;Mark Arneman&lt;/a&gt; for the &lt;a href=&#34;https://itch.io/jam/tvgamejam&#34;&gt;#TVGameJam&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Play in your browser or download it &lt;a href=&#34;https://bearlikelion.itch.io/the-game-of-game-of-games&#34;&gt;here&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://arneman.me/thegameofgameofgames/&#34;&gt;View the highscores&lt;/a&gt; online!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;&#xA;&lt;p&gt;The Game of Game of Games is my entry into the &lt;a href=&#34;https://itch.io/jam/tvgamejam&#34;&gt;#TVGameJam&lt;/a&gt;. This was a &lt;strong&gt;solo development effort as well as my first released game!&lt;/strong&gt; It was inspired by the television show, &lt;a href=&#34;https://www.nbc.com/ellens-game-of-games&#34;&gt;Ellen&amp;rsquo;s Game of Games&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The project source is available on &lt;a href=&#34;https://github.com/bearlikelion/thegameofgameofgames&#34;&gt;GitHub​&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
