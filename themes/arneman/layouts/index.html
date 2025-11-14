@@ -1,25 +1,17 @@
-	{{ partial "head.html" . }}
-	<body>
-    <div id="wrapper">
-        {{ partial "profile.html" . }}
+{{ partial "head.html" . }}
+<body>
+    {{ partial "nav.html" . }}
 
-        <section class="home">
-            <div class="about">
-                {{ .Content }}
-            </div>
+    {{ partial "hero.html" . }}
 
-            <!-- <h1>Latest Posts</h1>
-            {{ partial "post-list.html"  . }}
-            {{ partial "pagination.html" . }} -->
-            <h1><center>My Games on Steam</center></h1>
+    {{ partial "about.html" . }}
 
-            <center><iframe src="https://store.steampowered.com/widget/3454830/" frameborder="0" width="646" height="190"></iframe></center>
-            <center><iframe src="https://store.steampowered.com/widget/2862660/" frameborder="0" width="646" height="190"></iframe></center>
-        </section>
+    {{/*  {{ partial "projects-grid.html" . }}  */}}
 
-        {{ partial "footer.html" . }}
+    {{ partial "connect.html" . }}
 
-        {{ partial "js.html" . }}
-    </div>
-    </body>
+    {{ partial "footer.html" . }}
+
+    {{ partial "js.html" . }}
+</body>
 </html>

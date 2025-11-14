@@ -1,10 +1,27 @@
-<nav class="main-nav">
-	{{ $url := replace .Permalink .Site.BaseURL "" }}
-	{{ if not .IsHome }}
-		<a href='{{ .Site.BaseURL }}'>{{ with .Site.Params.home }}{{ . }}{{ else }}Home{{ end }}</a>
-	{{ end }}
-
-	{{ range $key, $val := .Site.Params.Links }}
-		<a href="{{ $val }}">{{ $key }}</a>
-	{{ end }}
+<nav class="modern-nav">
+	<div class="nav-container">
+		<div class="nav-brand">
+			<a href='{{ .Site.BaseURL }}'>Mark Arneman</a>
+		</div>
+		{{ if .IsHome }}
+		<div class="nav-links">			
+			<a href="#about">About</a>
+			{{/*  <a href="#projects">Projects</a>  */}}
+			<a href="#connect">Connect</a>
+			<a href="/Mark_Arneman_Resume.pdf" target="_blank" class="nav-cta">Resume</a>
+		</div>
+		{{ else }}
+		<div class="nav-links">
+			<a href='{{ .Site.BaseURL }}'>Home</a>
+			{{ range $key, $val := .Site.Params.Links }}
+				<a href="{{ $val }}">{{ $key }}</a>
+			{{ end }}
+		</div>
+		{{ end }}
+		<div class="nav-toggle" id="navToggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
 </nav>

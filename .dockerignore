@@ -1,0 +1,22 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Build artifacts
+public/
+resources/_gen/
+.hugo_build.lock
+hugo_stats.json
+
+# Development
+.vscode/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Documentation
+README.md

@@ -1,15 +1,14 @@
-<footer class="footer">
-    {{ if .Site.Params.Social }}
-        {{ partial "social.html" . }}
-    {{ end }}
-    <p class="small">
-    {{ with .Site.Params.copyright }}
-        {{ . | markdownify }}
-    {{ else }}
-       © Copyright {{ now.Year }} {{ .Site.Params.Author }}
-    {{ end }}
-    </p>
-    <p class="small">
-        Powered by <a href="http://www.gohugo.io/" target="_blank">Hugo</a>, view the source code on <a href="https://github.com/bearlikelion/arneman.me" target="_blank">GitHub</a>
-    </p>
+<footer class="modern-footer">
+    <div class="footer-content">
+        <p class="footer-text">
+            © {{ now.Year }} Mark Arneman. Built with <a href="http://www.gohugo.io/" target="_blank">Hugo</a>.
+        </p>
+        <p class="footer-links">
+            <a href="https://github.com/bearlikelion/arneman.me" target="_blank">View Source</a>
+            <span class="separator">•</span>
+            <a href="/resume.pdf" target="_blank">Resume</a>
+            <span class="separator">•</span>
+            <a href="https://status.arneman.me" target="_blank">Status</a>
+        </p>
+    </div>
 </footer>
