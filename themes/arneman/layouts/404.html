@@ -1,20 +1,23 @@
-	{{ partial "head.html" . }}
-	<body>
-    <div id="wrapper">
-        {{ partial "profile.html" . }}
+{{ partial "head.html" . }}
+<body>
+    {{ partial "nav.html" . }}
 
-        <section class="home">
-            <article class="post">
-                <header>
-                    <h1>{{ with .Site.Params.title404 }}{{ . }}{{ else }}404 - Page not found{{ end }}</h1>
-                    <h3>{{ with .Site.Params.subtitle404 }}{{ . }}{{ else }}The content you're looking for doesn't seem to exist.{{ end }}</h3>
-                </header>
+    <section class="section error-section">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1>{{ with .Site.Params.title404 }}{{ . }}{{ else }}Page Not Found{{ end }}</h1>
+            <p class="error-message">
+                {{ with .Site.Params.subtitle404 }}{{ . }}{{ else }}The page you're looking for doesn't exist or has been moved.{{ end }}
+            </p>
+            <div class="error-actions">
+                <a href="/" class="btn-primary">Go Home</a>
+                <a href="/#connect" class="btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
 
-                {{ partial "latest-posts.html" . }}
-            </article>
+    {{ partial "footer.html" . }}
 
-            {{ partial "footer.html" . }}
-        </section>
-    </div>
-    </body>
+    {{ partial "js.html" . }}
+</body>
 </html>

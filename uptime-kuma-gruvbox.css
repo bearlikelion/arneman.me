@@ -1,0 +1,409 @@
+/* Gruvbox Dark Theme for Uptime Kuma Status Page
+ * Matches the portfolio site's gruvbox aesthetic
+ * Colors from: https://github.com/morhetz/gruvbox
+ */
+
+:root {
+    /* Gruvbox Dark Colors */
+    --gruvbox-bg0-hard: #1d2021;
+    --gruvbox-bg0: #282828;
+    --gruvbox-bg1: #3c3836;
+    --gruvbox-bg2: #504945;
+    --gruvbox-bg3: #665c54;
+    --gruvbox-bg4: #7c6f64;
+
+    --gruvbox-fg0: #fbf1c7;
+    --gruvbox-fg1: #ebdbb2;
+    --gruvbox-fg2: #d5c4a1;
+    --gruvbox-fg3: #bdae93;
+    --gruvbox-fg4: #a89984;
+
+    --gruvbox-yellow: #fabd2f;
+    --gruvbox-yellow-dim: #d79921;
+    --gruvbox-green: #b8bb26;
+    --gruvbox-green-dim: #98971a;
+    --gruvbox-red: #fb4934;
+    --gruvbox-red-dim: #cc241d;
+    --gruvbox-orange: #fe8019;
+    --gruvbox-blue: #83a598;
+    --gruvbox-purple: #d3869b;
+
+    /* Spacing & Typography */
+    --gap: 16px;
+    --border-radius: 8px;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ===== Global Styles ===== */
+body {
+    background-color: var(--gruvbox-bg0) !important;
+    color: var(--gruvbox-fg1) !important;
+    font-family: var(--font-family) !important;
+}
+
+/* ===== Header & Logo ===== */
+.title-flex {    
+    border-bottom: 2px solid var(--gruvbox-yellow) !important;
+    padding: 24px 0 !important;
+}
+
+.logo-wrapper {
+    display: none;
+}
+
+.logo {
+    max-width: 64px !important;
+    height: auto !important;
+}
+
+/* Hide title text if you prefer logo-only */
+span[data-v-7d4a7f28] {
+    color: var(--gruvbox-fg0) !important;
+    font-weight: 600 !important;
+}
+
+/* ===== Admin Controls ===== */
+.mb-4[data-v-a2098280]:has([data-testid="edit-button"]) {
+    background-color: var(--gruvbox-bg1) !important;
+    padding: 12px !important;
+    border-radius: var(--border-radius) !important;
+    border: 1px solid var(--gruvbox-bg2) !important;
+}
+
+.btn-primary {
+    background-color: var(--gruvbox-yellow) !important;
+    border-color: var(--gruvbox-yellow) !important;
+    color: var(--gruvbox-bg0) !important;
+    font-weight: 600 !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--gruvbox-yellow-dim) !important;
+    border-color: var(--gruvbox-yellow-dim) !important;
+}
+
+/* ===== Overall Status ===== */
+.overall-status[data-v-a2098280] {
+    background-color: var(--gruvbox-bg1) !important;
+    border: 2px solid var(--gruvbox-bg2) !important;
+    border-radius: var(--border-radius) !important;
+    color: var(--gruvbox-fg1) !important;
+    padding: 16px !important;
+    margin-bottom: 24px !important;
+}
+
+.overall-status:has(.ok) {
+    border-color: var(--gruvbox-green) !important;
+}
+
+.overall-status:has(.warning) {
+    border-color: var(--gruvbox-orange) !important;
+}
+
+.overall-status:has(.danger) {
+    border-color: var(--gruvbox-red) !important;
+}
+
+.overall-status:has(.status-maintenance) {
+    border-color: var(--gruvbox-blue) !important;
+}
+
+/* ===== Incidents & Alerts ===== */
+.incident[data-v-a2098280] {
+    background-color: var(--gruvbox-bg1) !important;
+    border-left: 4px solid var(--gruvbox-yellow) !important;
+    color: var(--gruvbox-fg1) !important;
+    margin-bottom: 16px !important;
+    border-radius: var(--border-radius) !important;
+}
+
+.incident.bg-danger {
+    border-left-color: var(--gruvbox-red) !important;
+    background-color: rgba(251, 73, 52, 0.1) !important;
+}
+
+.incident.bg-warning {
+    border-left-color: var(--gruvbox-orange) !important;
+    background-color: rgba(254, 128, 25, 0.1) !important;
+}
+
+.incident.bg-info {
+    border-left-color: var(--gruvbox-blue) !important;
+    background-color: rgba(131, 165, 152, 0.1) !important;
+}
+
+/* ===== Maintenance Windows ===== */
+.shadow-box.bg-maintenance {
+    background-color: var(--gruvbox-bg1) !important;
+    border: 1px solid var(--gruvbox-blue) !important;
+    border-radius: var(--border-radius) !important;
+    color: var(--gruvbox-fg1) !important;
+}
+
+.timeslot {
+    background-color: var(--gruvbox-bg2) !important;
+    border-radius: 4px !important;
+    padding: 8px 12px !important;
+    color: var(--gruvbox-fg2) !important;
+}
+
+/* ===== Monitor Groups ===== */
+div[data-v-026459e0]:has(> .group-title) {
+    margin-bottom: 32px !important;
+}
+
+.group-title {
+    color: var(--gruvbox-yellow) !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-bottom: 16px !important;
+    padding-bottom: 8px !important;
+    border-bottom: 2px solid var(--gruvbox-bg2) !important;
+}
+
+.shadow-box.monitor-list {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+/* ===== Monitor Items ===== */
+.monitor-list .item {
+    background-color: var(--gruvbox-bg1) !important;
+    border: 1px solid var(--gruvbox-bg2) !important;
+    border-radius: var(--border-radius) !important;
+    padding: 16px !important;
+    margin-bottom: 12px !important;
+    transition: all 0.2s ease !important;
+}
+
+.monitor-list .item:hover {
+    border-color: var(--gruvbox-yellow) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px !important;
+}
+
+.item-name[data-v-026459e0] {
+    color: var(--gruvbox-fg0) !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+}
+
+.badge {
+    background-color: var(--gruvbox-green) !important;
+    color: var(--gruvbox-bg0) !important;
+    border-radius: 4px !important;
+    padding: 4px 12px !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+}
+
+/* ===== Tags ===== */
+.extra-info[data-v-026459e0] {
+    margin-top: 8px !important;
+}
+
+.tag-wrapper {
+    display: inline-block;
+    background-color: var(--gruvbox-bg2) !important;
+    color: var(--gruvbox-fg2) !important;
+    border-radius: 4px !important;
+    padding: 4px 8px !important;
+    margin-right: 8px !important;
+    font-size: 12px !important;
+}
+
+.tag-wrapper.tag-primary {
+    background-color: var(--gruvbox-blue) !important;
+    color: var(--gruvbox-bg0) !important;
+}
+
+.tag-wrapper.tag-success {
+    background-color: var(--gruvbox-green) !important;
+    color: var(--gruvbox-bg0) !important;
+}
+
+.tag-wrapper.tag-warning {
+    background-color: var(--gruvbox-orange) !important;
+    color: var(--gruvbox-bg0) !important;
+}
+
+.tag-wrapper.tag-danger {
+    background-color: var(--gruvbox-red) !important;
+    color: var(--gruvbox-bg0) !important;
+}
+
+/* ===== Uptime Bars ===== */
+.wrap {
+    margin-top: 12px !important;
+}
+
+.hp-bar-big {
+    background-color: var(--gruvbox-bg2) !important;
+    border-radius: 4px !important;
+    overflow: hidden !important;
+    height: 24px !important;
+}
+
+.beat-hover-area[data-v-ce0d40a3] {
+    opacity: 1 !important;
+}
+
+.beat.empty {
+    background-color: var(--gruvbox-bg3) !important;
+}
+
+.beat.down {
+    background-color: var(--gruvbox-red) !important;
+}
+
+.beat.pending {
+    background-color: var(--gruvbox-orange) !important;
+}
+
+.beat.maintenance {
+    background-color: var(--gruvbox-blue) !important;
+}
+
+.beat:not(.empty):not(.down):not(.pending):not(.maintenance) {
+    background-color: var(--gruvbox-green) !important;
+}
+
+.word[data-v-ce0d40a3] {
+    color: var(--gruvbox-fg3) !important;
+    font-size: 11px !important;
+    margin-top: 4px !important;
+}
+
+/* ===== Tooltips ===== */
+.tooltip-wrapper .tooltip-content[data-v-abd90d66] {
+    background-color: var(--gruvbox-bg0-hard) !important;
+    border: 1px solid var(--gruvbox-bg2) !important;
+    color: var(--gruvbox-fg1) !important;
+    border-radius: 4px !important;
+    padding: 8px 12px !important;
+}
+
+.tooltip-status.status-up {
+    color: var(--gruvbox-green) !important;
+}
+
+.tooltip-status.status-pending {
+    color: var(--gruvbox-orange) !important;
+}
+
+.tooltip-status.status-down {
+    color: var(--gruvbox-red) !important;
+}
+
+.tooltip-status.status-maintenance {
+    color: var(--gruvbox-blue) !important;
+}
+
+.tooltip-time[data-v-abd90d66] {
+    color: var(--gruvbox-fg3) !important;
+}
+
+/* ===== Footer ===== */
+footer[data-v-a2098280] {    
+    border-top: 1px solid var(--gruvbox-bg2) !important;
+    color: var(--gruvbox-fg3) !important;
+    padding: 24px 0 !important;
+    margin-top: 48px !important;
+}
+
+footer a {
+    color: var(--gruvbox-yellow) !important;
+    text-decoration: none !important;
+}
+
+footer a:hover {
+    color: var(--gruvbox-yellow-dim) !important;
+    text-decoration: underline !important;
+}
+
+/* Hide refresh timer (optional) */
+.refresh-info[data-v-a2098280] {
+    display: none !important;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .title-flex {
+        padding: 16px 0 !important;
+    }
+
+    .logo {
+        max-width: 48px !important;
+    }
+
+    .monitor-list .item {
+        padding: 12px !important;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .badge {
+        margin-top: 8px !important;
+    }
+}
+
+/* ===== Scrollbar Styling (Optional) ===== */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gruvbox-bg0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gruvbox-bg2);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gruvbox-bg3);
+}
+
+/* ===== Links ===== */
+a {
+    color: var(--gruvbox-yellow) !important;
+    transition: color 0.2s ease !important;
+}
+
+a:hover {
+    color: var(--gruvbox-yellow-dim) !important;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    border-radius: 4px !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+}
+
+.btn-outline-primary {
+    border-color: var(--gruvbox-yellow) !important;
+    color: var(--gruvbox-yellow) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--gruvbox-yellow) !important;
+    color: var(--gruvbox-bg0) !important;
+}
+
+/* ===== Container ===== */
+.container {
+    max-width: 1200px !important;
+}
