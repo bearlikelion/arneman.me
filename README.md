@@ -50,7 +50,7 @@ arneman.me/
 └── uptime-kuma-gruvbox.css # Custom status page theme
 ```
 
-## Local Development
+## Development
 
 ### Prerequisites
 - [Hugo](https://gohugo.io/)
