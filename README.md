@@ -80,4 +80,4 @@ View the themed status page at [https://status.arneman.me/](https://status.arnem
 
 ## License
 
-[MIT License](./LICENSE).
+[MIT License](./LICENSE)
