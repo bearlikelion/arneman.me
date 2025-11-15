@@ -276,6 +276,18 @@ body{
         width:100%;
         text-align:center
     }
+    .nav-links.active{
+        right:0
+    }
+    .nav-toggle.active span:nth-child(1){
+        transform:rotate(45deg) translate(7px,7px)
+    }
+    .nav-toggle.active span:nth-child(2){
+        opacity:0
+    }
+    .nav-toggle.active span:nth-child(3){
+        transform:rotate(-45deg) translate(7px,-7px)
+    }
 }
 .about-section{
     padding:120px 40px 80px;
