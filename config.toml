@@ -9,7 +9,7 @@ disableKinds = ["taxonomy", "term", "section"]
 
 [params]
 author = "Mark Arneman"
-description = "Mark Arneman's personal webpage"
+description = "Mark Arneman's online portfolio."
 
 enableGoogleAnalytics = true
 googleAnalytics = "UA-48666725-1"
