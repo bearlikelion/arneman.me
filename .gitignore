@@ -12,6 +12,7 @@ hugo.linux
 
 # Temporary lock file while building
 /.hugo_build.lock
+.hugo_build.lock
 
 ## OS Files
 # Windows
@@ -23,5 +24,17 @@ $RECYCLE.BIN/
 # OSX
 .DS_Store
 
-.vscode/
-.hugo_build.lock
+# Node.js
+node_modules/
+npm-debug.log*
+.env
+
+# Build artifacts
+build/
+dist/
+
+# Logs
+*.log
+
+# Test coverage
+coverage/

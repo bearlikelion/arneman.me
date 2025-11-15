@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Hugo Serve",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "hugo serve",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Hugo Build",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "hugo --minify",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

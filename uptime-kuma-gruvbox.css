@@ -48,7 +48,7 @@ body {
 }
 
 .logo-wrapper {
-    display: none;
+    display: none !important;
 }
 
 .logo {

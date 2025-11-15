@@ -4,74 +4,16 @@ languageCode = "en-US"
 title = "Mark Arneman"
 theme = "arneman"
 
-# Set the value to true if your site include CJK (Chinese, Japanese, and Korean languages) characters
-hasCJKLanguage = false
+# Disable page types not used in single-page layout
+disableKinds = ["taxonomy", "term", "section"]
 
 [params]
 author = "Mark Arneman"
 description = "Mark Arneman's personal webpage"
-bio = ""
-
-twitter = "bearlikelion"
-facebook = "bearlikelion"
-
-enableRSS = true
-enableToc = false
-
-enableDisqus = false
-disqusShortname = "arneman-me"
-
-enableSummary = true
-summaryLength = 10
-# Set the value to true if use description in post front matter replace content summary
-useDescriptionReplaceSummary = false
 
 enableGoogleAnalytics = true
 googleAnalytics = "UA-48666725-1"
 
-# The url for twitter card image, default is avatar.png in static/images directory
-enableTwitterCard = false
-twitterCardImage = ""
+# Ignore legacy content directories
+ignoreFiles = ["content/posts/.*", "content/projects/.*"]
 
-# Add custom assets with their paths relative to the static folder
-customCSS = []
-customJS  = []
-
-# The variables below are optionally too and can be used to
-# translate or customize each string of the theme.
-
-# Navigation links
-home = ""
-about = "About Me"
-archive = ""
-projects = ""
-subscribe = "RSS"
-
-olderPosts = ""
-newerPosts = ""
-copyright = ""
-
-# show latest posts in single page
-showLatestPosts = true
-readMore = ""
-
-# Share
-enableShare = false
-tweet = ""
-share = ""
-
-# 404 page
-title404 = ""
-subtitle404 = ""
-
-# Add additional social link entries underneath
-[social]
-# facebook-square = "https://facebook.com/bearlikelion"
-github-square = "https://github.com/bearlikelion"
-linkedin = "https://linkedin.com/in/markarneman"
-twitter-square = "https://twitter.com/bearlikelion"
-
-
-[blackfriday]
-plainIDAnchors = true
-hrefTargetBlank = true

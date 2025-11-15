@@ -13,7 +13,7 @@ WORKDIR /site
 COPY . .
 
 # Build the Hugo site
-RUN hugo --minify
+RUN hugo --minify --gc
 
 # Production stage - Serve with nginx
 FROM nginx:alpine
