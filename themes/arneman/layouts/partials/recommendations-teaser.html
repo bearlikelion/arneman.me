@@ -1,0 +1,49 @@
+<section id="recommendations-teaser" class="section recommendations-teaser-section">
+	<h2 class="section-title">Stuff You Should See</h2>
+	<p class="recommendations-teaser-intro">
+		My curated collection of YouTube videos.
+	</p>
+
+	{{ $recommendations := where .Site.RegularPages "Section" "recommendations" }}
+	{{ if gt (len $recommendations) 0 }}
+		{{ $random := index $recommendations (mod now.Unix (len $recommendations)) }}
+		<div class="recommendations-teaser-container">
+			<div class="recommendations-teaser-example">
+				{{ if eq $random.Params.type "video" }}
+					<a href="https://www.youtube.com/watch?v={{ $random.Params.youtube_id }}"
+					   target="_blank"
+					   rel="noopener noreferrer"
+					   class="teaser-thumbnail">
+						<img src="https://img.youtube.com/vi/{{ $random.Params.youtube_id }}/hqdefault.jpg"
+							 alt="{{ $random.Title }}"
+							 loading="lazy">
+						<div class="teaser-play-overlay">
+							<i class="fab fa-youtube"></i>
+						</div>
+					</a>
+				{{ else if eq $random.Params.type "channel" }}
+					<a href="{{ $random.Params.channel_url }}"
+					   target="_blank"
+					   rel="noopener noreferrer"
+					   class="teaser-thumbnail">
+						<div class="teaser-channel-icon">
+							<i class="fab fa-youtube"></i>
+						</div>
+					</a>
+				{{ end }}
+				<div class="teaser-text">
+					<h3 class="teaser-title">{{ $random.Title }}</h3>
+					<div class="teaser-content">
+						{{ $random.Content }}
+					</div>
+				</div>
+			</div>
+
+			<div class="recommendations-teaser-cta">
+				<a href="/recommendations/" class="recommendations-teaser-link">
+					See All Recommendations <i class="fas fa-arrow-right"></i>
+				</a>
+			</div>
+		</div>
+	{{ end }}
+</section>

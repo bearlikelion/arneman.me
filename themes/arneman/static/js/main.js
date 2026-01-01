@@ -75,4 +75,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initial check for elements in view
     handleScrollAnimation();
+
+    // Shuffle recommendations on page load
+    function shuffleRecommendations() {
+        const grid = document.getElementById('recommendationsGrid');
+        if (!grid) return;
+
+        const cards = Array.from(grid.children);
+
+        // Fisher-Yates shuffle
+        for (let i = cards.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [cards[i], cards[j]] = [cards[j], cards[i]];
+        }
+
+        cards.forEach(card => grid.appendChild(card));
+    }
+
+    // Run shuffle if recommendations section exists
+    if (document.getElementById('recommendationsGrid')) {
+        shuffleRecommendations();
+    }
 });

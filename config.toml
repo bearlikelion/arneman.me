@@ -5,7 +5,7 @@ title = "Mark Arneman"
 theme = "arneman"
 
 # Disable page types not used in single-page layout
-disableKinds = ["taxonomy", "term", "section"]
+disableKinds = ["taxonomy", "term"]
 
 [params]
 author = "Mark Arneman"

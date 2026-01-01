@@ -1,0 +1,75 @@
+{{ partial "head.html" . }}
+<body>
+	<nav class="modern-nav recommendations-nav">
+		<div class="nav-container">
+			<div class="nav-brand">
+				<a href='{{ .Site.BaseURL }}'>← Back Home</a>
+			</div>
+		</div>
+	</nav>
+
+	<section id="recommendations" class="section recommendations-section">
+		<div>
+			<h1 class="recommendations-title">Stuff You Should See</h1>
+			<p class="recommendations-intro">
+				A curated collection of YouTube videos I recommend.
+			</p>
+		</div>
+		<div class="recommendations-grid" id="recommendationsGrid">
+			{{ range .Pages }}
+			<div class="recommendation-card" data-type="{{ .Params.type }}">
+				<div class="recommendation-thumbnail">
+					{{ if eq .Params.type "video" }}
+						<a href="https://www.youtube.com/watch?v={{ .Params.youtube_id }}"
+						   target="_blank"
+						   rel="noopener noreferrer">
+							<img src="https://img.youtube.com/vi/{{ .Params.youtube_id }}/maxresdefault.jpg"
+								 alt="{{ .Title }}"
+								 loading="lazy"
+								 onerror="this.src='https://img.youtube.com/vi/{{ .Params.youtube_id }}/hqdefault.jpg'">
+							<div class="play-overlay">
+								<i class="fab fa-youtube"></i>
+							</div>
+						</a>
+					{{ else if eq .Params.type "channel" }}
+						<a href="{{ .Params.channel_url }}"
+						   target="_blank"
+						   rel="noopener noreferrer">
+							<div class="channel-thumbnail">
+								<i class="fab fa-youtube"></i>
+							</div>
+						</a>
+					{{ end }}
+				</div>
+
+				<div class="recommendation-content">
+					<h3 class="recommendation-title">
+						{{ if eq .Params.type "video" }}
+							<a href="https://www.youtube.com/watch?v={{ .Params.youtube_id }}"
+							   target="_blank"
+							   rel="noopener noreferrer">
+								{{ .Title }}
+							</a>
+						{{ else }}
+							<a href="{{ .Params.channel_url }}"
+							   target="_blank"
+							   rel="noopener noreferrer">
+								{{ .Title }}
+							</a>
+						{{ end }}
+					</h3>
+
+					<div class="recommendation-description">
+						{{ .Content }}
+					</div>
+				</div>
+			</div>
+			{{ end }}
+		</div>
+	</section>
+
+	{{ partial "footer.html" . }}
+
+	{{ partial "js.html" . }}
+</body>
+</html>
