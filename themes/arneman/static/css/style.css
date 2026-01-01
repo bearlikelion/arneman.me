@@ -1006,10 +1006,80 @@ body{
     font-size: 11px;
 }
 
+/* YouTube Channel Blurb */
+.recommendations-youtube-blurb {
+    max-width: 700px;
+    margin: 80px auto 0;
+    text-align: center;
+    padding: 40px;
+    background: #1d2021;
+    border: 1px solid #504945;
+    border-radius: 8px;
+}
+
+.recommendations-youtube-blurb h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #fabd2f;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.01em;
+}
+
+.recommendations-youtube-blurb p {
+    color: #d5c4a1;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 24px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.youtube-channel-link {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #3c3836;
+    border: 1px solid #504945;
+    border-radius: 8px;
+    color: #fabd2f;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.youtube-channel-link:hover {
+    background: #504945;
+    border-color: #fabd2f;
+}
+
+.youtube-channel-link i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .recommendations-section {
         padding: 60px 20px 80px;
+    }
+
+    .recommendations-youtube-blurb {
+        margin: 60px auto 0;
+        padding: 32px 24px;
+    }
+
+    .recommendations-youtube-blurb h3 {
+        font-size: 24px;
+    }
+
+    .recommendations-youtube-blurb p {
+        font-size: 15px;
+    }
+
+    .youtube-channel-link {
+        padding: 11px 24px;
+        font-size: 14px;
     }
 
     .recommendations-nav .nav-brand h1 {
@@ -1046,6 +1116,24 @@ body{
 @media screen and (max-width: 540px) {
     .recommendations-section {
         padding: 50px 16px 70px;
+    }
+
+    .recommendations-youtube-blurb {
+        margin: 50px auto 0;
+        padding: 28px 20px;
+    }
+
+    .recommendations-youtube-blurb h3 {
+        font-size: 22px;
+    }
+
+    .recommendations-youtube-blurb p {
+        font-size: 14px;
+    }
+
+    .youtube-channel-link {
+        padding: 10px 20px;
+        font-size: 14px;
     }
 
     .recommendations-nav .nav-brand h1 {
