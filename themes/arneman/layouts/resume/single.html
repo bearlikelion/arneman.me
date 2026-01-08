@@ -2,16 +2,20 @@
 <body>
     {{ partial "nav.html" . }}
 
-    <div style="max-width: 1200px; margin: 0 auto; padding: 120px 40px 40px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
-            <h1 style="margin: 0; font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 700; color: #fabd2f;">{{ .Title }}</h1>
-            <a href="/Mark_Arneman_Resume.pdf" download="Mark_Arneman_Resume.pdf" style="padding: 12px 24px; background: transparent; color: #fabd2f; border: 1px solid #fabd2f; text-decoration: none; font-weight: 500; font-size: 15px; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 8px; font-family: 'Inter', sans-serif;" onmouseover="this.style.background='#fabd2f'; this.style.color='#282828';" onmouseout="this.style.background='transparent'; this.style.color='#fabd2f';">
+    <div class="resume-container">
+        <div class="resume-header">
+            <h1 class="resume-title">{{ .Title }}</h1>
+            <a class="resume-download" href="/Mark_Arneman_Resume.pdf" download="Mark_Arneman_Resume.pdf">
                 <i class="fas fa-download"></i> Download PDF
             </a>
         </div>
 
-        <div style="border: 1px solid #504945; overflow: hidden; background: #3c3836;">
+        <div class="resume-embed">
             <embed src="/Mark_Arneman_Resume.pdf" type="application/pdf" width="100%" height="1000px" style="display: block;" />
+        </div>
+
+        <div class="resume-source">
+            This resume is <a href="https://github.com/bearlikelion/MarkArnemanResume" target="_blank">open sourced on GitHub</a>
         </div>
     </div>
 
